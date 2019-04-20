@@ -85,9 +85,9 @@ def fibonacci(member):
         return "Numri qe keni derguar ka qene shume i madh dhe i paprocesueshem"
 
 def convert(urdheri):
-    vlera = re.findall(r"[-+]?\d*\.\d+|\d+", urdheri)
-    vlera = str(vlera).replace("[", "").replace("]", "").replace("'", "").replace("'", "")
-    vlera = float(vlera)                                            # ekstraktimi i numrit nga stringu i marre
+    vlera = re.findall(r"[-+]?\d*\.\d+|\d+", urdheri)   # ekstraktimi i numrit nga stringu i marre
+    vlera = str(vlera).replace("[", "").replace("]", "").replace("'", "").replace(" ", "").replace(",", "")
+    vlera = float(vlera)
     if urdheri[11:31].upper()=='KILOWATTTOHORSEPOWER':
         return str(vlera) + " KiloWatt = " + str(vlera*1.34102) + "HorsePower"
     elif urdheri[11:31].upper()=='HORSEPOWERTOKILOWATT':
