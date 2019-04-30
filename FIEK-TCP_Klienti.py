@@ -29,7 +29,7 @@ try:
     while procesi:
         method = input()
         if method.upper() == 'E':
-            print("Diten e mire")
+            print("Keni vendosur te shkeputni lidhjen me server. Kaloni nje dite te kendshme!")
             procesi = False
         elif method == '':
             print("Komande jo valide. Vazhdo me kerkese tjeter.")
