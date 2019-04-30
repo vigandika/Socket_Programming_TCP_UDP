@@ -163,7 +163,7 @@ def client_thread(conn):
             elif method.upper() == 'NUMRIIPORTIT':
                 answer = "Klienti eshte duke perdorur portin " + PortNumber(client_address)
             elif method[0:16].upper() == 'BASHKETINGELLORE':
-                answer = "Teksti i shkenuar ka " + Consonants(method[16:]) + " bashketingellore"
+                answer = "Teksti i shenuar ka " + Consonants(method[17:]) + " bashketingellore"
             elif method[0:8].upper() == 'PRINTIMI':
                 answer = "Teksti i printuar: " + Print(method[8:])
             elif method.upper() == 'EMRIIKOMPJUTERIT':
